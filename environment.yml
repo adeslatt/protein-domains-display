@@ -1,0 +1,19 @@
+name: protein_domains_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.9
+  - pandas
+  - numpy
+  - biopython
+  - nextflow
+  - graphviz  # Required for DAG visualization
+  - ucsc-bedgraphtobigwig  # UCSC tool for bigWig conversion
+  - ucsc-bedtobigbed  # UCSC tool for bigBed conversion
+  - pip
+  - pip:
+      - sphinx
+      - sphinx_rtd_theme
+
